@@ -36,8 +36,13 @@ $match = [
 </head>
 <body>
     <ul>
-        <?php for ($i=0; $i < count($match) ; $i++) { 
-            echo '<li>' . $match[$i]['casa'] . ' - ' . $match[$i]['trasferta']  . ' | ' .  $match[$i]['pt_casa']  . ' - ' .  $match[$i]['pt_trasferta'] .'</li>';
+        <?php 
+        for ($i=0; $i < count($match) ; $i++) { 
+            echo '<li>' . 
+            $match[$i]['casa'] . ' - ' . $match[$i]['trasferta']  
+            . ' | ' .  
+            $match[$i]['pt_casa']  . ' - ' .  $match[$i]['pt_trasferta'] .
+            '</li>';
         }?>
     </ul>
 </body>
