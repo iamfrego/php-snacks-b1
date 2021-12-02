@@ -23,7 +23,6 @@ $match = [
     ],
 ];
 
-// }
 ?>
 
 <!DOCTYPE html>
