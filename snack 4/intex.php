@@ -6,5 +6,5 @@ while (count($random_array) < 15) {
         $random_array[] = $random_number;
     }
 }
-
+var_dump($random_array);
 ?>
