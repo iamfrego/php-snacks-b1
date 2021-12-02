@@ -22,7 +22,7 @@ $explode_paragraphs = explode('.', $paragraph);
 
     <h1>New Paragraphs:</h1>
     <p>
-        <?php for ($i = 0; $i < count($explode_paragraphs); $i++) {
+        <?php for($i = 0; $i < count($explode_paragraphs); $i++) {
             $element = $explode_paragraphs[$i]; ?>
            <p> <?= $element ?></p>
     <?php
