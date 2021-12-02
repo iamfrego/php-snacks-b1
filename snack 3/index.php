@@ -51,8 +51,9 @@ $posts = [
 </head>
 
 <body>
-    <?php foreach ($posts as $key => $value) {
-        for ($i = 0; $i < count($value); $i++) { ?>
+    <?php foreach ($posts as $key => $value) { ?>
+        <h3><?= ($key); ?></h3>
+        <?php for ($i = 0; $i < count($value); $i++) { ?>
             <p>
                 <?= $value[$i]['title'] ?>
                 <br>
