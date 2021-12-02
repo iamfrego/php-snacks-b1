@@ -22,7 +22,6 @@
         ]
     ];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,8 +35,8 @@
         }
         .teachers, .pm{
             margin: 1rem;
-            padding:4rem;
-            color: white;
+            padding:3rem;
+            color: dark;
         }
         .teachers{
             background-color: gray;
@@ -52,14 +51,14 @@
         <div class="teachers">
             <ul>
                 <?php for ($i=0; $i < count($db['teachers']); $i++) { ?>
-                    <li><?php echo $db['teachers'][$i]['name'] . ' ' . $db['teachers'][$i]['lastname'] ?></li>
+                    <li><?= $db['teachers'][$i]['name'] . ' ' . $db['teachers'][$i]['lastname'] ?></li>
                 <?php }; ?>
             </ul>
         </div>
         <div class="pm">
             <ul>
                 <?php for ($i=0; $i < count($db['pm']); $i++) { ?>
-                    <li><?php echo $db['pm'][$i]['name'] . ' ' . $db['pm'][$i]['lastname'] ?></li>
+                    <li><?= $db['pm'][$i]['name'] . ' ' . $db['pm'][$i]['lastname'] ?></li>
                 <?php }; ?>
             </ul>
         </div>
