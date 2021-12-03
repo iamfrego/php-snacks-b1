@@ -35,16 +35,16 @@ $students = [
 <body>
     <h1>Classe:</h1>
     <?php for ($i = 0; $i < count($students); $i++) { ?>
-        <h3>
-            <?= $students[$i]['name'] . ' ' . $students[$i]['lastname'] ?>
-        </h3>
-        <p>Media voti
-            <strong>
-                <?= round(array_sum($students[$i]['grades']) /
+    <h3>
+        <?= $students[$i]['name'] . ' ' . $students[$i]['lastname'] ?>
+    </h3>
+    <p>Media voti
+        <strong>
+            <?= round(array_sum($students[$i]['grades']) /
                     count($students[$i]['grades']), 2) ?>
-            </strong>
-        </p>
-        <br>
+        </strong>
+    </p>
+    <br>
     <?php }; ?>
 </body>
 
