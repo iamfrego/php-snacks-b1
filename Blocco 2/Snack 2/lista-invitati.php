@@ -6,8 +6,11 @@ $people = array(0 => 'Mario', 1 => 'Fabio', 2 => 'Luigi', 3 => 'Pierpaolo');
 for ($i=0; $i < count($people) ; $i++) { 
     if( $people[$i] === $_GET['name']){
         echo "Benvenuto";
+        die();
     }else{
         echo "Vattene";
+        die();
+
     }
 }
 
