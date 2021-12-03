@@ -45,7 +45,7 @@ $ads = [
     <?php if ($ads[0]['is_active']) {
         shuffle($ads); ?>
     <img src="<?= $ads[0]['image_path']; ?>">
-    <a href=""><?= '<br>' . $ads[0]['link']; ?></a>
+    <a href=" <?= $ads[0]['link']; ?> "><?= '<br>' . $ads[0]['link']; ?></a>
     <?php
         } ?>
 </body>
