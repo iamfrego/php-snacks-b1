@@ -18,7 +18,7 @@
 <body>
     <form method="get" action="lista-invitati.php">
 
-        <P>Valore n. 1: <input type="text" name="name" size=10></P>
+        <P>Inserisci nome: <input type="text" name="name" size=10></P>
         <P><input type="submit" name="invio" value="Calcola"></P>
 
 </body>
